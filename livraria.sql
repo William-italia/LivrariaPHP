@@ -1,5 +1,13 @@
-CREATE DATABASE livraria;
+CREATE DATABASE LivrariaJosé;
 use livraria;
+
+CREATE TABLE tb_user (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    email VARCHAR(80) UNIQUE,
+    setor  VARCHAR(80),
+    senha VARCHAR(15) 
+);
 
 CREATE TABLE tb_cliente (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
